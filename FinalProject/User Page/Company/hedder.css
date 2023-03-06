@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing:border-box;
+}
+
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: #rgba(247,88,66,0.4);
+    --color-white: #000000;
+    --color-light: rgb(255,255,255,0.7);
+    --color-black: #000000;
+    --color-bg: #ffffff;
+    --color-bg1: #008cd2;
+    --color-bg2: #424890;
+   
+
+
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height:1.7;
+    color:var(--color-white);
+    background:var(--color-bg);
+}
+
+.container{
+    width: 95%;
+    margin:0 auto;
+}
+
+a{
+    color:var(--color-white);
+}
+
+nav{
+    background:var(--color-bg1);
+    width:100vw;
+    height:5rem;
+    position:fixed;
+    top:0;
+    z-index:11;
+}
+
+.nav_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button{
+    display:none;
+}
+
+.nav_menu{
+    display:flex;
+    align-items:center;
+    gap:4rem;
+}
+
+.nav_menu a{
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.nav_menu a:hover{
+    color:var(--color-bg2);
+}
+
+
+
+header{
+    position:relative;
+    top: 5rem;
+    overflow:hidden;
+    height:30vh;
+    margin-bottom:5rem;
+}
+
+
+
+
+.footer{
+    background: var(--color-bg1);
+    padding-top:5rem;
+    font-size:0.9rem;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 5rem;
+}
+
+.footer_container > div h4{
+    margin-bottom:1.2rem;
+}
+.footer_1 p{
+    margin: 0 0 2rem;
+}
+
+.footer ul li{
+    margin-bottom:0.7rem;
+}
+
+.footer ul li a:hover{
+    text-decoration: underline;
+
+}
+
+.footer_socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer_copyright{
+    text-align:center;
+    margin-top:4rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--color-bg2);
+}

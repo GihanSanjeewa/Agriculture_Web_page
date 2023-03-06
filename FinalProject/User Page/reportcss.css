@@ -1,0 +1,23 @@
+
+
+.reportFiles{
+    margin-top: 10rem;
+    margin-left: 30px;
+    margin-bottom: 10rem;
+    padding-left: 15rem;
+    cursor: pointer;
+}
+
+.reportFiles ul li{
+    margin-bottom:1rem;
+   
+}
+
+.reportFiles ul li:hover{   
+    text-decoration: underline;
+    
+}
+
+.reportFiles li{
+    list-style: disc;
+}
